@@ -10,11 +10,26 @@
     <link rel="stylesheet" href="/static/main.css">
 
     <title>Drew McDermott</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44256990-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-44256990-2');
+    </script>
   </head>
   <body>
     <div class="container">
         <h1>Drew McDermott</h1>
-        <div class="employment">
+        <ul>
+            <li><a href="#employment">Employment</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+        <div id="employment" class="employment">
             <h2>Employment</h2>
             <dt>3M | M*Modal [Feb 2017 - Current]</dt>
             <ul>
@@ -39,8 +54,60 @@
                 <li>Maintained library computers and handled Help Desk calls</li>
             </ul>
         </div>
-        <div class="Projects">
+        <div id="projects" class="projects">
             <h2>Projects</h2>
+            <dt>M*Modal Fluency Direct [2017 - Current]</dt>
+            <ul>
+                <li>Speach to text application focusing on medical applications, my team works on the user facing application</li>
+                <li>C#, JavaScript</li>
+                <li>Awards:</li>
+                <ul>
+                    <li><a href="https://klasresearch.com/best-in-klas-ranking/speech-recognition/2019/317" target="_blank">Best in Klas 2019</a></li>
+                    <li><a href="https://klasresearch.com/best-in-klas-ranking/speech-recognition/2018/317" target="_blank">Best in Klas 2018</a></li>
+                </ul>
+            </ul>
+            <dt>Siriusware E-Commerce [2016 - 2017]</dt>
+            <ul>
+                <li>For <i>Carnegie Museums of Pittsburgh</i></li>
+                <li>E-commerce system built to use the on-site point of sale system <i>Siriusware</i> using their API</li>
+                <li>Includes a CMS which allows other employees to manage the name and visibility of items</li>
+                <li>Laravel (PHP)</li>
+            </ul>
+            <dt>Light Clock [2016 - 2017]</dt>
+            <ul>
+                <li>Designed by <i>The Studio</i> in collaboration with <i>Carnegie Museum of Art</i></li>
+                <li>A physical clock with two 180&deg; cameras which would capture an image every 5 minutes</li>
+                <li>My contribution was code which would download the images from the camera and stich them into a single 360&deg; image.  Additionally an application to pull daily weather data which was used for matching images in a visualization</li>
+                <li>Python, C++</li>
+                <li>Press</li>
+                <ul>
+                    <li><a href="https://storyboard.cmoa.org/2016/09/photography-here-and-now-light-time-and-social-practice/" target="_blank">CMOA - Photography Here and Now: Light, Time, and Social Practice</a></li>
+                </ul>
+            </ul>
+            <dt>Oakland Guide [2016]</dt>
+            <ul>
+                <li>For <i>Carnegie Museums of Pittsburgh</i></li>
+                <li>An application designed to guide users aroung the Carnegie Museums Oakland Campus using tours and a catalog of select objects</li>
+                <li>Included a central content management system (CMS) with an API that served an iOS and web applications.</li>
+                <li>My contributions were to upgrade an existing CMS and create the web based application optimized form mobile devices.</li>
+                <li>Ruby on Rails (CMS), Django Python (Web app)</li>
+                <li>GitHubs: <a href="https://github.com/drewmcd621/cmoa-app-cms" target="_blank">CMS</a> <a href="https://github.com/drewmcd621/WebGuideApp" target="_blank">Web app</a></li>
+            </ul>
+            <dt>Digital Metric Dashboard [2015]</dt>
+            <ul>
+                <li>For <i>Carnegie Museums of Pittsburgh</i></li>
+                <li>A user friendly exploration of key digital metrics including data from Google Analytics, Twitter, Facebook, and Instagram.</li>
+                <li>PHP, JavaScript</li>
+                <li><a href="https://github.com/drewmcd621/Dashboard" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        <div id="education" class="education">
+        <h2>Education</h2>
+        <dt>University of Pittsburgh [2008 - 2014]</dt>
+        <ul>
+            <li>B.S. in Computer Science</li>
+            <li>B.A. in History of Art and Architecture</li>
+        </ul>
         </div>
     </div>
   </body>
